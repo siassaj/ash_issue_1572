@@ -23,10 +23,10 @@
 ## My results
 included in case theres' something about my system causing this
 
-Elixir 1.17.2
-Erlang/OTP 27 [erts-15.0.1]
-Ubuntu 22.04.5 LTS
-Dockerised PostgreSQL 17rc1 (Debian 17~rc1-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+- Elixir 1.17.2
+- Erlang/OTP 27 [erts-15.0.1]
+- Ubuntu 22.04.5 LTS
+- Dockerised PostgreSQL 17rc1 (Debian 17~rc1-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
 
 1 failure
 ```
