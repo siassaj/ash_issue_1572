@@ -14,6 +14,7 @@ Postgresql ~> 16
    - DB_PASSWORD (defaults to "postgres")
    - DB_HOSTNAME (defaults to "localhost")
    - DB_NAME (defaults to "helpdesk")
+   - PORT (defaults to "5432")
 1. run `mix ash.setup`
 
 # Test
