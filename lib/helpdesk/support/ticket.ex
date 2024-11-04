@@ -45,12 +45,14 @@ defmodule Helpdesk.Support.Ticket do
       filter(expr(has_name_like(name: ^arg(:name))))
     end
 
+    # Perform the boolean comparison in the action using a calculation
     read :boolean_in_action_using_calculation do
       argument(:name, :string, do: allow_nil?(false))
 
       filter(expr(name_trigram_relevance(name: ^arg(:name)) > 0.2))
     end
 
+    # Perform the boolean comparison in the action using the ash expression directly
     read :boolean_in_action_using_ash_expression do
       argument(:name, :string, do: allow_nil?(false))
 
