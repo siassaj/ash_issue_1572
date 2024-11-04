@@ -52,11 +52,11 @@ SELECT s0."id", s0."name", s0."inserted_at", s0."updated_at" FROM "support__tick
 passing sql queries
 
 ```
-# should be for action :boolean_in_action_using_calculation as the result is not cast to boolean
+# should be for action :boolean_in_action_using_calculation as the result of the boolean comparison is not cast to boolean
 13:08:40.802 [debug] QUERY OK source="support__ticket" db=0.7ms queue=0.4ms
 SELECT s0."id", s0."name", s0."inserted_at", s0."updated_at" FROM "support__ticket" AS s0 WHERE ((word_similarity(s0."name"::text, $1))::float > $2::float) ["first", 0.2]
 
-# should be for action :boolean_in_calculation as the result is cast to boolean
+# should be for action :boolean_in_calculation as the result of the boolean comparison is cast to boolean
 13:08:40.808 [debug] QUERY OK source="support__ticket" db=0.6ms queue=0.3ms
 SELECT s0."id", s0."name", s0."inserted_at", s0."updated_at" FROM "support__ticket" AS s0 WHERE (((word_similarity(s0."name"::text, $1))::float > $2::float)::boolean) ["first", 0.2]
 ```
