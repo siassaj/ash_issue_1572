@@ -1,0 +1,8 @@
+{
+  "ash_functions_version": 4,
+  "installed": [
+    "citext",
+    "ash-functions",
+    "pg_trgm"
+  ]
+}
